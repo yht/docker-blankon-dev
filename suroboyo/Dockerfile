@@ -11,10 +11,10 @@ RUN apt-get update && apt-get upgrade && apt-get install -y \
     make \ 
     openssh-client \ 
     pristine-tar \ 
-    rake \ 
+#    rake \ 
     rsync \ 
-    ruby \ 
-    ruby-dev \ 
-    rubygems \ 
+#    ruby \ 
+#    ruby-dev \ 
+#    rubygems \ 
     wget
 CMD ["/bin/bash"]
