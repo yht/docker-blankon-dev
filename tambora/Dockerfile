@@ -1,6 +1,7 @@
 # Dockerfile
 FROM ryht/blankon:tambora
-RUN apt-get update && apt-get upgrade && apt-get install -y \ 
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 91824AB09120A048 && \
+ apt-get update && apt-get upgrade && apt-get install -y \ 
     build-essential \ 
     curl \ 
     devscripts \ 
