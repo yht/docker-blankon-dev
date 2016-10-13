@@ -1,6 +1,6 @@
 # Dockerfile
 FROM ryht/blankon:suroboyo
-RUN apt-get update && apt-get upgrade && apt-get install -y \ 
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \ 
     build-essential \ 
     curl \ 
     devscripts \ 
