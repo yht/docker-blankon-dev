@@ -16,7 +16,6 @@ RUN apt-get install -y \
     make \ 
     openssh-client \ 
     pristine-tar \ 
-    rake \ 
     rsync \ 
     bzr \
     wget
