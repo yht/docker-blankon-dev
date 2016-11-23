@@ -1,6 +1,11 @@
 # Dockerfile
 FROM ryht/blankon:suroboyo
-RUN apt-get update && apt-get upgrade -y && apt-get install -y \ 
+RUN apt-key adv --keyserver pgp.mit.edu --recv-keys 91824AB09120A048 && \
+ apt-get update && \
+ apt-get upgrade -y && \
+ apt-get install -y \
+    blankon-keyring
+RUN apt-get install -y \
     build-essential \ 
     curl \ 
     devscripts \ 
@@ -11,10 +16,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     make \ 
     openssh-client \ 
     pristine-tar \ 
-#    rake \ 
     rsync \ 
-#    ruby \ 
-#    ruby-dev \ 
-#    rubygems \ 
+    bzr \
     wget
 CMD ["/bin/bash"]
